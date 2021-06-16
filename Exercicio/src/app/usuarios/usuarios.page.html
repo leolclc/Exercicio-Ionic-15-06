@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Alunos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+<div *ngFor = "let usuario of users">
+  <h1>
+<p>ID: {{usuario.id}}</p>
+<p>Nome:  {{usuario.nome}}</p>
+<p>Sobrenome: {{usuario.sobrenome}}</p>
+<p>Email: {{usuario.email}}</p>
+<p>RA: {{usuario.ra}}</p>
+<p>Idade: {{usuario.idade}}</p>
+
+</h1>
+</div>
+</ion-content>
